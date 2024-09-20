@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div id="container">
+        <img src="https://models.bestmodelsagency.com/recursos/clientes/F31110A5-6133-4F2E-96A8-927FA9485371/list.jpg?v1589811317?202203111855" alt="">
+
+        <i id="heart" class="ri-heart-3-fill"></i>
+    </div>
+    <script>
+    var container = document.querySelector("#container")
+    console.log(container)
+    var love = document.querySelector("#heart")
+    
+        
+    container.addEventListener("dblclick",function(){
+        love.style.transform = "translate(-50% , -50%) scale(1)"
+         
+        setTimeout(() => {
+        love.style.transform = "translate(-50%, -50%) scale(0)"
+    }, 1500);
+    })
+    
+
+
+
+
+
+    </script>
+</body>
+</html>
